@@ -1,0 +1,162 @@
+/* ==========================================
+ASIDE
+========================================== */
+aside {
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    background-color: var(--aside-bg);
+}
+
+aside div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3.25rem;
+}
+
+aside nav .list-one {
+    display: flex;
+    flex-direction: column;
+    gap: 2.37rem;
+    padding-top: 4.94rem;
+    padding-bottom: 3.34rem;
+}
+
+aside nav .list-one li {
+    display: flex;
+    gap: 0.62rem;
+    font-size: var(--fs-navbar);
+    font-weight: var(--fw-500);
+    color: var(--navbar-text1);
+    padding-left: 1.87rem;
+    padding-right: 6.62rem;
+
+}
+
+aside nav .list-one li:not(.aside-two) {
+    color: var(--navbar-text2);
+}
+
+.list-two {
+    display: flex;
+    flex-direction: column;
+    gap: 1.44rem;
+    padding-left: 1.87rem;
+}
+
+.list-two li {
+    display: flex;
+    gap: 0.94rem;
+    align-items: center;
+    padding: 0.31rem;
+    border-radius: 0.625rem;
+    align-self: flex-start;
+}
+
+.save {
+    background-color: #69F0AE;
+}
+
+.exit {
+    background-color: var(--clips-on-carts);
+}
+
+/* ==========================================
+MAIN
+========================================== */
+
+.numbers-top {
+    display: flex;
+    align-items: center;
+}
+
+.numbers-top span:not(.number-one, .number-two) {
+    padding: 1rem 1.37rem;
+    border-radius: 900px;
+    border: 1px solid black;
+    margin: 0 1.81rem;
+}
+
+.number-one {
+    padding: 1rem 1.37rem;
+    border-radius: 900px;
+    border: 1px solid black;
+    margin-right: 1.81rem;
+}
+
+.number-two {
+    background-color: var(--carts-bg);
+    padding: 1rem 1.37rem;
+    border-radius: 900px;
+    margin: 0 1.81rem;
+}
+
+.adding-line {
+    display: flex;
+    justify-content: space-between;
+    width: 52.0625rem;
+    font-size: var(--fs-subheading);
+    font-weight: 600;
+}
+
+.add-new {
+    display: flex;
+    justify-content: center;
+    gap: 0.94rem;
+    background-color: #D1FAE6;
+    padding: 0.1rem 0.62rem;
+    border-radius: 0.625rem;
+    margin-bottom: 3.31rem;
+}
+
+.dropdowns select {
+    width: 52.0625rem;
+    font-family: 'Noto Sans', sans-serif;
+    background-color: var(--aside-bg);
+    border-radius: 0.625rem;
+    padding: 0.87rem 1.81rem;
+    margin-bottom: 1.75rem;
+    border: none;
+    font-weight: 500;
+}
+
+.dropdown-icon {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.dropdown-icon img {
+    background-color: var(--carts-bg);
+    margin-bottom: 30px;
+    padding: 0.69rem;
+    border-radius: 900px;
+}
+
+.arrow-next {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 3.37rem;
+}
+
+.arrow-next div {
+    display: flex;
+    gap: 0.94rem;
+    background-color: var(--clips-on-carts);
+    padding: 0.3125rem;
+    border-radius: 0.625rem;
+}
+
+/* ==========================================
+MEDIA QUERIES
+========================================== */
+
+@media (max-width:1235px) {
+
+    .footer-lists {
+        flex-direction: column;
+        gap: 2rem;
+        margin: auto;
+    }
+}

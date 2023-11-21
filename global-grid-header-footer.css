@@ -1,0 +1,227 @@
+ /* ==========================================
+ GLOBAL
+ ========================================== */
+
+ * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+main {
+    padding-bottom: 3.31rem;
+    margin: auto;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    font-size: var(--fs-heading2);
+    font-weight: var(--fw-600);
+    padding: 2.88rem 0;
+}
+
+h4 {
+    font-size: var(--fs-normal);
+    font-weight: var(--fw-700);
+    color: black;
+    padding-bottom: 1.87rem;
+}
+
+hr {
+    width: 20%;
+    border-bottom: 1px solid black;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: inherit;
+    font: inherit;
+    border-radius: 0;
+    appearance: none;
+}
+button:hover {
+    cursor: pointer;
+  }
+
+:root {
+    --carts-bg: #C5DBFF;
+    --clips-on-carts: #82B1FF;
+    --footer-bg: #69A1FF;
+    --aside-bg: #ECF3FF;
+    --navbar-text1: #1D3A6B;
+    --navbar-text2: #3E7EE8;
+
+    --approved-color: #C3FFA7;
+    --pending-color: #D1CAFD;
+    --continue-color: #DCDCDC;
+    --createNew-color: #9BF5C9;
+    --addNew-color: #D1FAE6;
+
+    --fs-text: 1rem;
+    --fs-normal: 1.375rem;
+    --fs-subheading: 1.5rem;
+    --fs-heading2: 2rem;
+    --fs-heading1: 2.44rem;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+}
+
+@media (max-width: 1235px) {
+    :root {
+        --fs-text: 0.875rem;
+        --fs-normal: 1rem;
+        --fs-subheading: 1.25rem;
+        --fs-heading2: 1.5rem;
+        --fs-heading1: 2rem;
+
+        --fw-400: 400;
+        --fw-600: 500;
+        --fw-700: 600;
+    }
+}
+
+ /* ==========================================
+DISPLAY GRID SETTINGS
+========================================== */
+body {
+    display: grid;
+    gap: 0 1.5rem;
+    grid-template-areas:
+    "aside header header header header header"
+    "aside main main main main main"
+    "aside main main main main main"
+    "aside main main main main main"
+    "footer footer footer footer footer footer";
+    /* grid-template-rows: 11.38rem auto auto auto auto; */
+}
+
+body aside {
+    grid-area: aside;
+}
+body header{
+    grid-area: header ;
+}
+body main {
+    grid-area: main ;
+}
+body footer {
+    grid-area: footer ;
+}
+
+ /* ==========================================
+DISPLAY GRID SETTINGS
+========================================== */
+body {
+    display: grid;
+    grid-template-areas:
+    "aside header header header header header"
+    "aside main main main main main"
+    "aside main main main main main"
+    "aside main main main main main"
+    "footer footer footer footer footer footer";
+    grid-template-rows: 11.38rem auto auto auto auto;
+}
+
+body aside {
+    grid-area: aside;
+}
+body header{
+    grid-area: header ;
+}
+body main {
+    grid-area: main ;
+}
+body footer {
+    grid-area: footer ;
+}
+
+ /* ==========================================
+HEADER
+========================================== */
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+header img {
+    background-color: var(--carts-bg);
+    border-radius: 900px;
+    padding: 0.75rem;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    padding-top: 3.44rem;
+    padding-right: 3.44rem;
+    margin-left: auto;
+}
+
+.name-header {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+/* ==========================================
+FOOTER
+========================================== */
+
+footer {
+    background-image: url(/images/footer-image.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    height: 330px;
+    display: flex;
+    gap: 5rem;
+    background-color: var(--footer-bg);
+}
+
+/* footer img {
+    width: clamp(100px, 50%, 300px);
+} */
+
+.footer-lists {
+    display: flex;
+    gap: 5rem;
+    margin: 3.83rem 10rem 3.83rem auto;
+}
+
+.fortuna-bold {
+    font-weight: var(--fw-600);
+}
+
+.footer-list-one {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer-list-one li:nth-of-type(2) {
+    display: flex;
+    gap: 0.62rem;
+}
+
+.footer-list-one li:nth-of-type(3) {
+    display: flex;
+    gap: 0.62rem;
+}

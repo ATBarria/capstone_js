@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/global-grid-header-footer.css" />
+    <link rel="stylesheet" href="/main.css" />
+    <script type="module" src="/dashboard.js" defer></script>
+  </head>
+  <body>
+    <aside>
+      <div>
+        <img src="/images/logoTatiDesign.png" alt="" />
+        <h3>Fortuna</h3>
+      </div>
+      <nav>
+        <ul>
+          <li>
+            <img src="/images/profile.svg" alt="profile" /><span>Profile</span>
+          </li>
+          <li>
+            <img src="/images/employees.svg" alt="profile" /><span
+              >Employees</span
+            >
+          </li>
+          <li>
+            <img src="/images/clients.svg" alt="profile" /><span>Clients</span>
+          </li>
+          <li>
+            <img src="/images/fixedCosts.svg" alt="profile" /><span
+              >Fixed Costs</span
+            >
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <header>
+      <div class="content-header">
+        <div class="name-header">
+          <p>Tatiana Pinzón</p>
+          <p>TatiFinch Inc.</p>
+        </div>
+        <img src="/images/personHeader.svg" alt="profile" />
+      </div>
+    </header>
+    <main>
+      <h1>Your Dashboard</h1>
+      <div class="dashboard-items">
+        <div class="dropdowns">
+          <select class="dropdown" name="clients" id="client-select">
+            <option value="">Clients</option>
+            <option value="client1">Client 1</option>
+            <option value="client2">Client 2</option>
+            <option value="client3">Client 3</option>
+            <option value="client4">Client 4</option>
+          </select>
+          <select class="dropdown" name="team" id="team-select">
+            <option value="">Team</option>
+            <option value="client1">Team 1</option>
+            <option value="client2">Team 2</option>
+            <option value="client3">Team 3</option>
+            <option value="client4">Team 4</option></select
+          ><select class="dropdown" name="date" id="date-select">
+            <option value="">Date</option>
+            <option value="client1">Date 1</option>
+            <option value="client2">Date 2</option>
+            <option value="client3">Date 3</option>
+            <option value="client4">Date 4</option></select
+          ><select class="dropdown" name="status" id="client-select">
+            <option value="">Status</option>
+            <option value="client1">Status 1</option>
+            <option value="client2">Status 2</option>
+            <option value="client3">Status 3</option>
+            <option value="client4">Status 4</option>
+          </select>
+        </div>
+        <button type="button" class="new-offer" onclick="visitPage()">
+          $ Create a new offer
+        </button>
+      </div>
+      <div class="carts">
+        <div class="cart">
+          <div class="cart-header">
+            <span class="cart-number">0012</span
+            ><time datetime="29.09.23">29.09.23 </time>
+          </div>
+          <div class="cart-main">
+            <h4>Home Page for Interaction Leipzig e.g.</h4>
+            <div class="cart-content">
+              <div>
+                <span>Client</span>
+                <p>Interaction Leipzig e.V.</p>
+              </div>
+              <div>
+                <span>Team</span>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div class="cart-footer">
+              <div class="pending">
+                <img src="/images/Pending.svg" alt="pending icon" />
+                <span>Pending</span>
+              </div>
+              <img src="/images/Delete.svg" alt="delete icon" />
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart-header">
+            <span class="cart-number">0011</span
+            ><time datetime="29.09.23">29.09.23 </time>
+          </div>
+          <div class="cart-main">
+            <h4>Home Page for Interaction Leipzig e.g.</h4>
+            <div class="cart-content">
+              <div>
+                <span>Client</span>
+                <p>Interaction Leipzig e.V.</p>
+              </div>
+              <div>
+                <span>Team</span>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div class="cart-footer">
+              <div class="approved">
+                <img src="/images/Pending.svg" alt="pending icon" />
+                <span>Approved</span>
+              </div>
+              <img src="/images/Delete.svg" alt="delete icon" />
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart-header">
+            <span class="cart-number">0010</span
+            ><time datetime="29.09.23">29.09.23 </time>
+          </div>
+          <div class="cart-main">
+            <h4>Home Page for Interaction Leipzig e.g.</h4>
+            <div class="cart-content">
+              <div>
+                <span>Client</span>
+                <p>Interaction Leipzig e.V.</p>
+              </div>
+              <div>
+                <span>Team</span>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div class="cart-footer">
+              <div class="continue">
+                <img src="/images/Pending.svg" alt="pending icon" />
+                <span>Continue</span>
+              </div>
+              <img src="/images/Delete.svg" alt="delete icon" />
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart-header">
+            <span class="cart-number">0009</span
+            ><time datetime="29.09.23">29.09.23 </time>
+          </div>
+          <div class="cart-main">
+            <h4>Home Page for Interaction Leipzig e.g.</h4>
+            <div class="cart-content">
+              <div>
+                <span>Client</span>
+                <p>Interaction Leipzig e.V.</p>
+              </div>
+              <div>
+                <span>Team</span>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div class="cart-footer">
+              <div class="pending">
+                <img src="/images/Pending.svg" alt="pending icon" />
+                <span>Pending</span>
+              </div>
+              <img src="/images/Delete.svg" alt="delete icon" />
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart-header">
+            <span class="cart-number">0008</span
+            ><time datetime="29.09.23">29.09.23 </time>
+          </div>
+          <div class="cart-main">
+            <h4>Home Page for Interaction Leipzig e.g.</h4>
+            <div class="cart-content">
+              <div>
+                <span>Client</span>
+                <p>Interaction Leipzig e.V.</p>
+              </div>
+              <div>
+                <span>Team</span>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div class="cart-footer">
+              <div class="approved">
+                <img src="/images/Pending.svg" alt="pending icon" />
+                <span>Approved</span>
+              </div>
+              <img src="/images/Delete.svg" alt="delete icon" />
+            </div>
+          </div>
+        </div>
+        <div class="cart">
+          <div class="cart-header">
+            <span class="cart-number">0007</span
+            ><time datetime="29.09.23">29.09.23 </time>
+          </div>
+          <div class="cart-main">
+            <h4>Home Page for Interaction Leipzig e.g.</h4>
+            <div class="cart-content">
+              <div>
+                <span>Client</span>
+                <p>Interaction Leipzig e.V.</p>
+              </div>
+              <div>
+                <span>Team</span>
+                <p>Web Design</p>
+              </div>
+            </div>
+            <div class="cart-footer">
+              <div class="continue">
+                <img src="/images/Pending.svg" alt="pending icon" />
+                <span>Continue</span>
+              </div>
+              <img src="/images/Delete.svg" alt="delete icon" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="positioning-numbers">
+        <div class="main-pages">
+          <span>1</span><span>2</span><span>3</span><span>...</span
+          ><span>></span>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-lists">
+        <div>
+          <ul class="footer-list-one">
+            <li class="fortuna-bold"><span>Fortuna 2023</span></li>
+            <li>
+              <img src="/images/Perm phone msg.svg" alt="phone icon" /><span
+                >015 9853 22</span
+              >
+            </li>
+            <li>
+              <img src="/images/email.svg" alt="" /><span
+                >fortuna@mail.com</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <span>Impressum</span
+              ><img src="/images/arrowLink.svg" alt="arrow link" />
+            </li>
+            <li>
+              <span>Datenschutz</span
+              ><img src="/images/arrowLink.svg" alt="arrow link" />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
