@@ -72,7 +72,7 @@
         <span>4</span>
       </div>
       <h2>General Information</h2>
-      <form action="">
+      <form id="registration-form">
         <div class="label-input-flex">
           <div class="label-input">
             <label for="project">Project Name</label>
@@ -89,48 +89,49 @@
             <input type="text" name="Project" id="client" />
           </div>
         </div>
-      </form>
-      <h2>Contact Person</h2>
-      <form action="">
+        <h2>Contact Person</h2>
         <div class="label-input-flex">
           <div class="label-input">
-            <label for="name">Name</label>
-            <input type="text" name="Project" />
+            <label for="person-name">Name</label>
+            <input type="text" id="person-name" />
           </div>
           <div class="label-input">
-            <label for="name">E-Mail</label>
-            <input type="text" name="Project" />
+            <label for="email">E-Mail</label>
+            <input type="text" id="email" />
           </div>
         </div>
         <div class="label-input-flex">
           <div class="label-input">
-            <label for="name">Sreet</label>
-            <input type="text" name="Project" />
+            <label for="name">Street</label>
+            <input type="text" id="street" />
           </div>
           <div class="label-input">
-            <label for="name">City</label>
-            <input type="text" name="Project" />
+            <label for="street">City</label>
+            <input type="text" id="city" />
           </div>
         </div>
         <div class="label-input-flex">
           <div class="label-input">
-            <label for="name">Postal Code</label>
-            <input type="text" name="Project" />
+            <label for="postal">Postal Code</label>
+            <input type="text" id="postal" />
           </div>
         </div>
         <div class="label-input-flex">
           <div class="label-input">
-            <label for="name">Project Description</label>
-            <input class="project-description" type="text" name="Project" />
+            <label for="project-description">Project Description</label>
+            <input
+              class="project-description"
+              type="text"
+              id="project-description"
+            />
           </div>
         </div>
-      </form>
-      <button class="arrow-next">
-        <div>
+        <button class="arrow-next">
           <span>Next</span
           ><img src="/images/arrowForward.svg" alt="arrow icon" />
-        </div>
-      </button>
+        </button>
+        <button type="submit">Register</button>
+      </form>
     </main>
     <footer>
       <img src="/images/footer-image.png" alt="a dancing figure" />
